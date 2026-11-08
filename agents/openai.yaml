@@ -1,0 +1,13 @@
+interface:
+  display_name: Repair SideStore Refresh
+  short_description: Diagnose pairing, VPN, and stale-port failures
+  default_prompt: Diagnose this SideStore refresh failure using the narrowest safe
+    path. Modify only the apps and device state explicitly authorized by the user,
+    and stop before destructive or ambiguous actions.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

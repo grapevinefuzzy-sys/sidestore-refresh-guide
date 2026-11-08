@@ -1,0 +1,11 @@
+# Default deny: publish only the reviewed files explicitly allowed below.
+*
+
+!/.gitignore
+!/README.md
+!/LICENSE
+!/SKILL.md
+!/agents/
+!/agents/openai.yaml
+!/references/
+!/references/error-map.md
