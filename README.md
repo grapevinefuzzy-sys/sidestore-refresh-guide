@@ -61,9 +61,9 @@ references/error-map.md   Exact error-to-action table and primary sources
 
 ## 中文速览
 
-这个仓库把 SideStore 刷新失败拆成四层：证书所有权、Remote Pairing、VPN 路由、动态端口。每出现一个新错误，只处理对应的一层，不重新撤销证书、重装 App 或重置手机。
+这个仓库将 SideStore 刷新失败分为四层：证书所有权、Remote Pairing、VPN 路由、动态端口，每出现一个新错误只处理对应的一层。
 
-最容易漏掉的修复是：当 `rppairing` 已经生效，却出现 `TCP port poll failed` 时，前往 SideStore 的 **Network Discovery** 查找 `_remotepairing._tcp.local` 当前端口，再写入 **Connection Config**。这个端口会变化，不能长期写死为 `49152`。
+最容易漏掉的修复是：当 `rppairing` 已经生效，却出现 `TCP port poll failed` 时，前往 SideStore 的 **Network Discovery** 查找 `_remotepairing._tcp.local` 当前端口，再写入 **Connection Config**。这个端口会变化，不能长期固定为 `49152`。
 
 ## Evidence and scope
 
